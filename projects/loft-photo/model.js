@@ -48,7 +48,7 @@ export default {
     return new Promise ((resolve, reject) => {
       VK.api(method, params, (data) => {
         if (data.error) {
-          reject(new Error (data.error.error_msg));
+          reject(new Error ('Error));
         } else {
           resolve(data.response);
         }
