@@ -53,7 +53,7 @@ export default {
           resolve(data.response);
         }
       })
-    })
+    });
   },
 
   async init() {
