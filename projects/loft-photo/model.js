@@ -34,7 +34,7 @@ export default {
 
       VK.Auth.login (data => {
         if (data.session) {
-          resolve(response);
+          resolve(data);
         } else {
           reject(new Error ('Не удалось авторизоваться'))
         }
